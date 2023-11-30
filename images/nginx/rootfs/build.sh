@@ -172,7 +172,6 @@ yum -y install \
   gd-dev \
   perl-dev \
   libedit-dev \
-  mercurial \
   alpine-sdk \
   findutils \
   curl \
